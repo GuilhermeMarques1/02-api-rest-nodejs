@@ -5,4 +5,5 @@ export const knex = setupKnex({
   connection: {
     filename: './tmp/app.db',
   },
+  useNullAsDefault: true, // To remove warning, all fields by default'll be null
 })
