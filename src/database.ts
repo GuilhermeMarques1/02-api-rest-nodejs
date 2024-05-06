@@ -3,7 +3,7 @@ import { knex as setupKnex } from 'knex'
 export const knex = setupKnex({
   client: 'sqlite',
   connection: {
-    filename: './tmp/app.db',
+    filename: './db/app.db',
   },
   useNullAsDefault: true, // To remove warning, all fields by default'll be null
 })
